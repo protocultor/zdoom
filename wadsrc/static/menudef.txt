@@ -453,6 +453,8 @@ OptionMenu "CustomizeControls"
 	Control 	"Strafe",				"+strafe"
 	Control 	"Show Scoreboard",		"+showscores"
 	Control 	"Toggle Scoreboard",	"togglescoreboard"
+	Control 	"Pause",			"pause"
+	Control 	"Main menu",			"menu_main"
 	StaticText 	""
 	StaticText 	"Chat", 1
 	Control 	"Say",					"messagemode"

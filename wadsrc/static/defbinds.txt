@@ -67,6 +67,7 @@ joy1 +attack
 joy2 +strafe
 joy3 +speed
 joy4 +use
+joy9 menu_main
 
 // Xbox 360 / PS2 controllers
 pad_a +use
