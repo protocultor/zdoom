@@ -969,6 +969,17 @@ bool G_Responder (event_t *ev)
 	}
 	else if (gamestate == GS_FINALE)
 	{
+		if (ev->type == EV_KeyDown)
+		{
+			const char *cmd = Bindings.GetBind (ev->data1);
+			if (cmd && !strnicmp(cmd, "menu_", 5))
+			{
+				M_StartControlPanel(true);
+				M_SetMenu(NAME_Mainmenu, -1);
+				return true;
+			}
+		}
+
 		if (F_Responder (ev))
 			return true;		// finale ate the event
 	}
