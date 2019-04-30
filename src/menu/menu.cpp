@@ -549,11 +549,13 @@ bool M_Responder (event_t *ev)
 			{
 			case KEY_JOY1:
 			case KEY_JOY3:
+			case KEY_JOY15:
 			case KEY_PAD_A:
 				mkey = MKEY_Enter;
 				break;
 
 			case KEY_JOY2:
+			case KEY_JOY14:
 			case KEY_PAD_B:
 				mkey = MKEY_Back;
 				break;
