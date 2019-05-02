@@ -168,12 +168,10 @@ void I_SetMouseCapture()
 {
 	// Clear out any mouse movement.
 	SDL_GetRelativeMouseState (NULL, NULL);
-	SDL_SetRelativeMouseMode (SDL_TRUE);
 }
 
 void I_ReleaseMouseCapture()
 {
-	SDL_SetRelativeMouseMode (SDL_FALSE);
 }
 
 static void PostMouseMove (int x, int y)
@@ -244,7 +242,6 @@ static bool inGame()
 static void I_CheckNativeMouse ()
 {
 	bool focus = SDL_GetKeyboardFocus() != NULL;
-	bool fs = screen->IsFullscreen();
 	
 	bool wantNative = !focus || (!use_mouse || GUICapture || paused || demoplayback || !inGame());
 
